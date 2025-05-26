@@ -23,9 +23,12 @@ class dokter {
         vector<pasien*> daftar_pasien;
 
         dokter(string pNama) :nama(pNama) {
-            class << "Dokter \"" << nama << "\" ada\n";   
+            cout << "Dokter \"" << nama << "\" ada\n";   
         }
         ~dokter() {
             cout << "Dokter \"" << nama << "\" tidak ada\n";
         }
-}
+
+        void tambahPasien(pasien*);
+        void cetakPasien();
+};
